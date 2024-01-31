@@ -7,9 +7,9 @@
 		<meta name="description" content="Kyle McCormick's personal website">
 		<style>
 			body {
-				max-width:650px;
-				/*margin:40px auto;*/
-				padding:0 10px;
+				max-width: 650px;
+				padding: 0;
+				margin: 0;
 				font: 18px/1.5 -apple-system,
 					BlinkMacSystemFont,
 					"Segoe UI",
@@ -22,26 +22,54 @@
 					"Segoe UI Emoji",
 					"Segoe UI Symbol",
 					"Noto Color Emoji";
-				color:#444;
 				background-image: url(images/boston-dewey-square.jpg);
 				background-size: cover;
 				background-repeat: no-repeat;
 				background-color: #433;
 				background-position: top 40px right 0;
+				color: #d0dbed;  /* airy light blue */
 			}
 			h1, h2, h3 {
 				line-height:1.2
 			}
+			header {
+				margin: 0;
+				height: 40px;
+				padding-left: 40px;
+				padding-top: 4px;
+			}
+			header > div {
+				float: left;
+				width: 100px;
+			}
+			header > div > a {
+				color: #d0dbed;  /* airy light blue */
+				text-decoration: none;
+			}		
+			header > div > a:hover {
+				color: #e8d887;  /* yellow from the millenium tower crown */
+				text-decoration: underline;
+			}		
 			#content {
-				margin-top: 80px;
+				margin-top: 40px;
 				margin-left: 40px;
-				color: #fee;
 				background-color: #433a;
 				padding: 0.5rem;
 			}
 		</style>
 	 </head>
 	<body>
+		<header>
+			<div>
+				<a href="#">home</p>
+			</div>
+			<div>
+				<a href="https://github.com/kdmccormick">github</p>
+			</div>
+			<div>
+				<a href="https://linkedin.com/in/kdmccormick96">linkedin</a>
+			</div>
+		</header>
 		<div id="content">
 			<h1>kyle mccormick</h1>
 			<p>Website coming soon.</p>
