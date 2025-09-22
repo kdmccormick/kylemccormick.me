@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+
+import os
+
+os.makedirs('html', exist_ok=True)
+
+with open('shell.html') as shell_f:
+    shell = shell_f.read()
+
+for content_page in ['index', 'about']:
+    with open(f'content/{content_page}.html') as content_f:
+        content = content_f.read()
+        final = shell.replace("<main></main>", content)
+        with open(f'html/{content_page}.html', 'w') as final_f:
+            final_f.write(final)
